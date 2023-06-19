@@ -1,0 +1,13 @@
+# .gitignore
+
+# Ignore the virtual environment directory
+env/
+
+# Ignore all __pycache__ directories
+__pycache__/
+
+# Ignore all .pyc files
+*.pyc
+
+# If you're using SQLite, ignore the SQLite database file
+*.sqlite3
