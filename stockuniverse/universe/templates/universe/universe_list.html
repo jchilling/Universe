@@ -1,0 +1,3 @@
+{% for universe in universes %}
+<p><a href="{% url 'universe_detail' pk=universe.pk %}">{{ universe.name }}</a></p>
+{% endfor %}
