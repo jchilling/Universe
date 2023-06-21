@@ -9,5 +9,7 @@ class Universe(models.Model):
 
 class Stock(models.Model):
     symbol = models.CharField(max_length=10)
+    exchange = models.CharField(max_length=10)
+    currency = models.CharField(max_length=10)
     universe = models.ForeignKey(Universe, related_name='stocks', on_delete=models.CASCADE)
     added_at = models.DateTimeField(auto_now_add=True)
